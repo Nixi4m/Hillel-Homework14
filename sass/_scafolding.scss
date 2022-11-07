@@ -91,6 +91,21 @@ h2, h3, h4, p {
     margin-bottom: 30px;
 }
 
+.blocks-title-block {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.blocks-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #323264;
+}
+
 .blocks {
     display: flex;
     flex-wrap: wrap;
