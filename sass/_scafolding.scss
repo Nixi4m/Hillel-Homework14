@@ -11,8 +11,7 @@ h2, h3, h4, p {
 .head-section{
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
     border-radius: 0px 0px 12px 12px;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 30px;
 
 }
 
@@ -115,12 +114,6 @@ h2, h3, h4, p {
     margin-left: auto;
 }
 
-.wrapper {
-    width: 315px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .deco-element1 {
     margin-left: 20px;
     margin-right: 20px;
@@ -137,10 +130,6 @@ h2, h3, h4, p {
     border-radius: 0px 0px 12px 12px;
 }
 
-.card {
-    width: 315px;
-}
-
 .block {
     width: 100%;
     height: 120px;
@@ -154,58 +143,58 @@ h2, h3, h4, p {
     display: none;
 }
 
-.block:nth-child(1) {
+.hillel-logo {
     background-color: #1C4280;
 }
 
-.block:nth-child(2) {
+.wannabiz-logo {
     background-color: #143646;
 }
 
-.block:nth-child(3) {
+.tapgerine-logo {
     background: linear-gradient(0deg, #F48B30, #F48B30), #F48B30;
 }
-.block:nth-child(4) {
+.dddlook-logo {
     background-color: #9e4dc3;
 }
 
-.block:nth-child(5) {
+.orangear-logo {
     background-color: #FD9339;
 }
 
-.block:nth-child(6) {
+.adtelligent-logo {
     background-color: #E2E2E4;
 }
 
-.block:nth-child(7) {
+.cliccy-logo {
     background-color: #C71C36;
 }
 
-.block:nth-child(8) {
+.ecoleasing-logo {
     background-color: #DCF3F9;
 }
 
-.block:nth-child(9) {
+.infratek-logo {
     background-color: #EAEAEA;
 }
 
-.block:nth-child(10) {
+.citypark-logo {
     background-color: #282240;
 }
 
-.block:nth-child(11) {
+.aps-logo {
     background-color: #1D4568;
 }
 
-.block:nth-child(12) {
+.ultcard-logo {
     background-color: #000000;
 }
 
 @media (min-width:768px) {
-    .wrapper {
-        width: 648px;
-        margin-left: auto;
-        margin-right: auto;
+
+    .head-section{
+        padding: 60px;
+    
     }
 
     .section-title {
@@ -220,7 +209,7 @@ h2, h3, h4, p {
     }
 
     .card {
-        width: 294px;
+        width: calc(50% - 30px);
     }
 
     .block {
@@ -236,11 +225,6 @@ h2, h3, h4, p {
 }
 
 @media (min-width:1024px) {
-    .wrapper {
-        width: 904px;
-        margin-left: auto;
-        margin-right: auto;
-    }
 
     .section-title {
         margin-bottom: 60px;
@@ -250,11 +234,11 @@ h2, h3, h4, p {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        gap: 60px;
     }
 
     .card {
-        margin-bottom: 60px;
-        width: 261px;
+        width: calc(33.33% - 40px);
     }
 
     .card:nth-child(n+3) {
@@ -274,11 +258,6 @@ h2, h3, h4, p {
 }
 
 @media (min-width:1440px) {
-    .wrapper {
-        width: 1320px;
-        margin-left: auto;
-        margin-right: auto;
-    }
 
     .section-title {
         margin-bottom: 60px;
@@ -288,11 +267,11 @@ h2, h3, h4, p {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        gap: 60px;
     }
 
     .card {
-        margin-bottom: 60px;
-        width: 400px;
+        width: calc(33.33% - 40px);
     }
 
     .card:nth-child(n+3) {
@@ -312,10 +291,9 @@ h2, h3, h4, p {
 }
 
 @media (min-width:1920px) {
-    .wrapper {
-        width: 1600px;
-        margin-left: auto;
-        margin-right: auto;
+
+    .head-section{
+        padding: 60px 160px;
     }
 
     .section-title {
@@ -326,11 +304,11 @@ h2, h3, h4, p {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        gap: 60px;
     }
 
     .card {
-        margin-bottom: 60px;
-        width: 493px;
+        width: calc(33.33% - 40px);
     }
 
     .card:nth-child(n+3) {
@@ -341,8 +319,9 @@ h2, h3, h4, p {
         width: 1720px;
         display: flex;
         flex-wrap: wrap;
-        margin-right: auto;
-        margin-left: auto;
+        border-radius: 15px;
+        overflow: hidden;
+        margin-bottom: 60px;
     }
 
     .block {
@@ -350,29 +329,5 @@ h2, h3, h4, p {
         justify-content: center;
         align-items: center;
         display: flex;
-    }
-
-    .block:nth-child(n+7) {
-        display: flex;
-    }
-
-    .block:nth-child(1) {
-        background-color: #1C4280;
-        border-radius: 15px 0 0 0;
-    }
-
-    .block:nth-child(4) {
-        background-color: #9e4dc3;
-        border-radius: 0 15px 0 0;
-    }
-    
-    .block:nth-child(9) {
-        background-color: #EAEAEA;
-        border-radius: 0 0 0 15px;
-    }
-
-    .block:nth-child(12) {
-        background-color: #000000;
-        border-radius: 0 0 15px 0;
     }
 }
