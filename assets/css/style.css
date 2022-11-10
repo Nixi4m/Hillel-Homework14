@@ -703,7 +703,7 @@ h2, h3, h4, p {
 }
 
 .slider-img {
-  background-image: url("../image/parthner-photo.svg");
+  background-image: url("../image/parthner-photo.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
