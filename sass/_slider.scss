@@ -47,13 +47,13 @@
     margin-bottom: 30px;
 }
 
-.slider-img img {
-    object-fit: cover;
-    height: 500px;
-}
-
 .slider-img {
+    background-image: url("../image/parthner-photo.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
+    height: 500px;
+    background-position: center;
 }
 
 .slider-content {
@@ -103,13 +103,8 @@
     
     .slider-img {
         width: 44.24%;
-    }
-
-    .slider-img img {
-        object-fit: cover;
-        width: 100%;
+        min-width: 400px;
         height: 528px;
-        flex-grow: 1;
     }
 
     .slider-content {
@@ -125,11 +120,6 @@
     
     .slider-img {
         width: 30.3%;
-    }
-
-    .slider-img img {
-        object-fit: cover;
-        width: 100%;
         height: 344px;
     }
 
@@ -150,11 +140,6 @@
     
     .slider-img {
         width: 20%;
-    }
-
-    .slider-img img {
-        object-fit: cover;
-        width: 100%;
         height: 298px;
     }
 
