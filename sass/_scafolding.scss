@@ -8,11 +8,42 @@ h2, h3, h4, p {
     padding: 0;
 }
 
-.head-section{
+.header {
+    padding-top: 60px;
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
     border-radius: 0px 0px 12px 12px;
-    padding: 30px;
+    position: relative;
+}
 
+.header::before {
+    content: "";
+    background: #CACADB;
+    border-radius: 0px 0px 12px 12px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: -10px;
+    height: 10px;
+    width: calc(100% - 40px);
+    position: absolute;
+    bottom: 0;
+}
+
+.header::after {
+    content: "";
+    background: #E7E7F2;
+    border-radius: 0px 0px 12px 12px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: -20px;
+    height: 10px;
+    width: calc(100% - 80px);
+    position: absolute;
+    bottom: 0;
+}
+
+
+.header-bottom-section{
+    padding: 30px;
 }
 
 .cards {
@@ -74,8 +105,24 @@ h2, h3, h4, p {
         height: 12px;
         position: absolute;
         right: 0;
-        margin-top: 2px;
+        margin-top: 2.5px;
       }
+}
+
+.sub-title:hover {
+    color: #F0145A;
+}
+
+.sub-title:hover:after {
+    background-image: url("../image/red-arrow-right.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 0;
+    margin-top: 3px;
 }
 
 .section-title {
@@ -112,22 +159,6 @@ h2, h3, h4, p {
     align-items: center;
     margin-right: auto;
     margin-left: auto;
-}
-
-.deco-element1 {
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-bottom: 10px;
-    background: #CACADB;
-    border-radius: 0px 0px 12px 12px;
-}
-
-.deco-element2 {
-    margin-left: 40px;
-    margin-right: 40px;
-    padding-bottom: 10px;
-    background: #E7E7F2;
-    border-radius: 0px 0px 12px 12px;
 }
 
 .block {
@@ -192,7 +223,7 @@ h2, h3, h4, p {
 
 @media (min-width:768px) {
 
-    .head-section{
+    .header-bottom-section{
         padding: 60px;
     
     }
@@ -292,7 +323,7 @@ h2, h3, h4, p {
 
 @media (min-width:1920px) {
 
-    .head-section{
+    .header-bottom-section{
         padding: 60px 160px;
     }
 
