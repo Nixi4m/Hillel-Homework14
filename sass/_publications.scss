@@ -1,6 +1,6 @@
 .publications {
-    padding: 30px;
     background: #F5F5FA;
+    padding-top: 30px;
 }
 
 .publication-box {
@@ -74,11 +74,6 @@
 }
 
 @media (min-width: 768px) {
-
-    .publications {
-        padding: 30px 60px;
-    }
-
     .publications a {
         width: calc(50% - 15px);
     }
@@ -89,10 +84,6 @@
 }
 
 @media (min-width: 1024px) {
-    
-    .publications {
-        padding: 30px 60px;
-    }
 
     .publications a {
         width: calc(33.33% - 20px);
@@ -105,7 +96,7 @@
 
 @media (min-width: 1920px) {
     .publications {
-        padding: 30px 160px;
+        margin-top: 60px;
     }
 }
 

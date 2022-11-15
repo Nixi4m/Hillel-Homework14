@@ -8,11 +8,22 @@ h2, h3, h4, p {
     padding: 0;
 }
 
+.wrapper {
+    padding: 0 30px;
+}
+
 .header {
-    padding-top: 60px;
+    padding-bottom: 30px;
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
     border-radius: 0px 0px 12px 12px;
     position: relative;
+}
+
+.contacts {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
 }
 
 .header::before {
@@ -39,11 +50,6 @@ h2, h3, h4, p {
     width: calc(100% - 80px);
     position: absolute;
     bottom: 0;
-}
-
-
-.header-bottom-section{
-    padding: 30px;
 }
 
 .cards {
@@ -222,10 +228,12 @@ h2, h3, h4, p {
 }
 
 @media (min-width:768px) {
+    .header {
+        padding-bottom: 60px;
+    }
 
-    .header-bottom-section{
-        padding: 60px;
-    
+    .wrapper {
+        padding: 0 60px;
     }
 
     .section-title {
@@ -322,9 +330,8 @@ h2, h3, h4, p {
 }
 
 @media (min-width:1920px) {
-
-    .header-bottom-section{
-        padding: 60px 160px;
+    .wrapper {
+        padding: 0 160px;
     }
 
     .section-title {

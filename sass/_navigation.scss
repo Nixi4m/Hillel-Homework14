@@ -1,5 +1,6 @@
 .nav {
     position: relative;
+    margin-bottom: 30px;
 }
 
 .nav::before {
@@ -94,6 +95,10 @@
 }
 
 @media (min-width: 768px) {
+    .nav {
+        margin-bottom: 60px;
+    }
+
     .nav-block {
         display: flex;
         column-gap: 30px;
