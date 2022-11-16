@@ -1,6 +1,6 @@
 .nav {
     position: relative;
-    margin-bottom: 30px;
+    margin: 30px 0;
 }
 
 .nav::before {
@@ -96,7 +96,7 @@
 
 @media (min-width: 768px) {
     .nav {
-        margin-bottom: 60px;
+        margin: 60px 0;
     }
 
     .nav-block {
