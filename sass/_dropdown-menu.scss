@@ -1,0 +1,82 @@
+.menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  z-index: 2;
+}
+.menu ul li {
+  margin: 0;
+  display: inline-block;  
+}
+
+.dropdown-link {
+  display: block;
+  padding: 7px 0px;
+  background: #F5F5FA;
+  border-radius: 15px;
+  color: #24A3FF;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.dropdown-active-link {
+  color: #F0145A;
+}
+
+.menu div .dropdown-link:hover {
+  background: #E6E6F0;
+}
+
+.menu ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+}
+.menu ul li:hover > ul {
+  display: block;
+}
+.menu ul ul li {
+  width: 100%;
+  text-align: center;
+  display: list-item;
+  position: relative;
+  border: none;
+  border-radius: 15px;
+}
+.menu-wrapper li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.menu-wrapper {
+  display: block;
+  width: 375px;
+  padding: 12px;
+  background-color: #fff;
+  box-shadow: 0px 15px 30px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  z-index: 2;
+}
+.menu-box {
+  padding-top: 30px;
+}
+
+.close-button {
+  background-image: url("../image/close-button.png");
+  background-size: cover;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.close-button-box {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
