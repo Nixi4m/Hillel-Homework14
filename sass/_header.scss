@@ -216,3 +216,18 @@
         border-radius: 50%;
     }
 }
+
+@media (min-width:1024px) {
+    .main-logo {
+        position: absolute;
+    }
+
+    .header-nav-block {
+        align-content: flex-end;
+        row-gap: 18.5px;
+    }
+
+    .navigation {
+        text-align: right;
+    }
+}
