@@ -1,8 +1,8 @@
 .header-top-section {
     height: 100vh;
-    background-image: url("../image/h-logo.png");
+    background-image: url("../image/h-logo.svg");
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size: 513px 100vh;
     background-position: center;
     position: relative;
 }
@@ -33,15 +33,9 @@
     align-items: center;
 }
 
-.language-switch input {
-    display: none;
-}
-
-.language-switch input:checked + .language {
-   background: #F0145A;
+.language-active {
+    background: #F0145A;
     border-radius: 8px;
-    border: none;
-    padding: 5px 7px;
   }
 
 .header-contacts {
@@ -49,7 +43,7 @@
 }
 
 .scroll-btn {
-    background-image: url("../image/scroll-btn.png");
+    background-image: url("../image/scroll-btn.svg");
     background-size: cover;
     background-color: transparent;
     background-repeat: no-repeat;
@@ -59,7 +53,7 @@
 }
 
 .menu-btn {
-    background-image: url("../image/menu-btn.png");
+    background-image: url("../image/menu-btn.svg");
     background-size: cover;
     background-color: transparent;
     background-repeat: no-repeat;
@@ -70,7 +64,6 @@
 
 .scroll-screen {
     display: flex;
-    height: 555px;
     flex-direction: column;
     justify-content: space-between;
 
@@ -112,7 +105,7 @@
 
 .breadcrumps a:not(:last-child)::after {
     content: "";
-    background-image: url("../image/slash.png");
+    background-image: url("../image/slash.svg");
     background-size: cover;
     width: 12px;
     height: 26px;
@@ -130,15 +123,96 @@
 }
 
 .bot-block {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
+    position: absolute;
+    top: calc(100% - 72px);
+    left: calc(50% - 21px);
 }
 
 .hlegal-logo {
-    background-image: url("../image/hlegal-logo.png");
+    background-image: url("../image/hlegal-logo.svg");
     background-size: cover;
     background-color: transparent;
     width: 69px;
     height: 32px;
+}
+
+.top-block-desc {
+    display: none;
+}
+@media (min-width: 768px) {
+    .top-block-desc {
+        display: block;
+    }
+
+    .top-block {
+        display: none;
+    }
+
+    .mid-block {
+        display: none;
+    }
+
+    .desctop-adress {
+        color: #FFFFFF;
+    }
+
+    .link-bar {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .hlegal-logo {
+        background-image: url("../image/hlegal-logo.svg");
+        background-size: cover;
+        background-color: transparent;
+        width: 130px;
+        height: 60px;
+    }
+
+    .facebook-white {
+        background-image: url("../image/facebook-logo-white.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+    }
+
+    .header-nav-block {
+        display: flex;
+        row-gap: 30px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-top: 50px;
+    }
+
+    .header-nav-link {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    .header-nav-link:not(:last-child) {
+        padding-right: 15px;
+    }
+
+    .lb-link {
+        position: relative;
+    }
+
+    .lb-link:not(:last-child):after {
+        content: "";
+        background-color: #B3B3BA;
+        width: 6px;
+        height: 6px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        margin-right: -12px;
+        border-radius: 50%;
+    }
 }

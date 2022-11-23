@@ -1262,6 +1262,10 @@ textarea {
 .adress {
   font-size: 16px;
   line-height: 20px;
+  color: #B3B3BA;
+}
+
+.footer-adress {
   color: #323264;
 }
 
@@ -1273,7 +1277,6 @@ textarea {
 }
 
 .social-logo {
-  content: "";
   background-image: url("../image/facebook-logo.png");
   background-size: 38px;
   background-position: center;
@@ -1330,9 +1333,9 @@ textarea {
 }
 .header-top-section {
   height: 100vh;
-  background-image: url("../image/h-logo.png");
+  background-image: url("../image/h-logo.svg");
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: 513px 100vh;
   background-position: center;
   position: relative;
 }
@@ -1363,15 +1366,9 @@ textarea {
   align-items: center;
 }
 
-.language-switch input {
-  display: none;
-}
-
-.language-switch input:checked + .language {
+.language-active {
   background: #F0145A;
   border-radius: 8px;
-  border: none;
-  padding: 5px 7px;
 }
 
 .header-contacts {
@@ -1379,7 +1376,7 @@ textarea {
 }
 
 .scroll-btn {
-  background-image: url("../image/scroll-btn.png");
+  background-image: url("../image/scroll-btn.svg");
   background-size: cover;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -1389,7 +1386,7 @@ textarea {
 }
 
 .menu-btn {
-  background-image: url("../image/menu-btn.png");
+  background-image: url("../image/menu-btn.svg");
   background-size: cover;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -1400,7 +1397,6 @@ textarea {
 
 .scroll-screen {
   display: flex;
-  height: 555px;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -1441,7 +1437,7 @@ textarea {
 
 .breadcrumps a:not(:last-child)::after {
   content: "";
-  background-image: url("../image/slash.png");
+  background-image: url("../image/slash.svg");
   background-size: cover;
   width: 12px;
   height: 26px;
@@ -1459,17 +1455,92 @@ textarea {
 }
 
 .bot-block {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
+  position: absolute;
+  top: calc(100% - 72px);
+  left: calc(50% - 21px);
 }
 
 .hlegal-logo {
-  background-image: url("../image/hlegal-logo.png");
+  background-image: url("../image/hlegal-logo.svg");
   background-size: cover;
   background-color: transparent;
   width: 69px;
   height: 32px;
+}
+
+.top-block-desc {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .top-block-desc {
+    display: block;
+  }
+  .top-block {
+    display: none;
+  }
+  .mid-block {
+    display: none;
+  }
+  .desctop-adress {
+    color: #FFFFFF;
+  }
+  .link-bar {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+  .hlegal-logo {
+    background-image: url("../image/hlegal-logo.svg");
+    background-size: cover;
+    background-color: transparent;
+    width: 130px;
+    height: 60px;
+  }
+  .facebook-white {
+    background-image: url("../image/facebook-logo-white.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+  }
+  .header-nav-block {
+    display: flex;
+    row-gap: 30px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 50px;
+  }
+  .header-nav-link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  .header-nav-link:not(:last-child) {
+    padding-right: 15px;
+  }
+  .lb-link {
+    position: relative;
+  }
+  .lb-link:not(:last-child):after {
+    content: "";
+    background-color: #B3B3BA;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    margin-right: -12px;
+    border-radius: 50%;
+  }
+}
+.menu {
+  display: flex;
+  align-items: center;
 }
 
 .menu ul {
@@ -1485,6 +1556,13 @@ textarea {
   display: inline-block;
 }
 
+.menu ul ul {
+  display: block;
+  position: relative;
+  top: 100%;
+  right: 0;
+}
+
 .dropdown-link {
   display: block;
   padding: 7px 0px;
@@ -1498,25 +1576,6 @@ textarea {
   text-decoration: none;
 }
 
-.dropdown-active-link {
-  color: #F0145A;
-}
-
-.menu div .dropdown-link:hover {
-  background: #E6E6F0;
-}
-
-.menu ul ul {
-  display: none;
-  position: absolute;
-  top: 100%;
-  right: 0;
-}
-
-.menu ul li:hover > ul {
-  display: block;
-}
-
 .menu ul ul li {
   width: 100%;
   text-align: center;
@@ -1526,38 +1585,55 @@ textarea {
   border-radius: 15px;
 }
 
+.dropdown-active-link {
+  color: #F0145A;
+}
+
+.menu div .dropdown-link:hover {
+  background: #E6E6F0;
+}
+
+.menu ul li:hover > ul {
+  display: block;
+}
+
 .menu-wrapper li:not(:last-child) {
   margin-bottom: 15px;
 }
 
-.menu-wrapper {
+.menu .menu-wrapper:hover > ul {
   display: block;
-  width: 375px;
-  padding: 12px;
-  background-color: #fff;
-  box-shadow: 0px 15px 30px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
-  z-index: 2;
-}
-
-.menu-box {
-  padding-top: 30px;
 }
 
 .close-button {
-  background-image: url("../image/close-button.png");
+  background-image: url("../image/close-button.svg");
   background-size: cover;
   width: 32px;
   height: 32px;
   border: none;
   background-color: transparent;
   padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 12px 12px 0 0;
 }
 
-.close-button-box {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 15px;
+.menu ul :hover > div {
+  display: block;
+}
+
+.menu-wrapper {
+  right: 0;
+  display: none;
+  width: 375px;
+  padding: 64px 12px 12px;
+  background-color: #fff;
+  box-shadow: 0px 15px 30px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  z-index: 2;
+  position: absolute;
+  margin-top: 167px;
 }
 
 /*# sourceMappingURL=style.css.map */
