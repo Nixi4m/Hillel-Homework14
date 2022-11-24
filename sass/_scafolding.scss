@@ -3,9 +3,17 @@
     font-family: "Montseratt", sans-serif;
 }
 
+body {
+    position: relative;
+}
+
 h2, h3, h4, p {
     margin: 0;
     padding: 0;
+}
+
+.hidden-title {
+    display: none;
 }
 
 .wrapper {
@@ -78,7 +86,6 @@ h2, h3, h4, p {
     font-size: 16px;
     line-height: 26px;
     color: #FFFFFF;
-    
 }
 
 .card-title {

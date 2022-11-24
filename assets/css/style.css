@@ -316,9 +316,17 @@ template, [hidden] {
   font-family: "Montseratt", sans-serif;
 }
 
+body {
+  position: relative;
+}
+
 h2, h3, h4, p {
   margin: 0;
   padding: 0;
+}
+
+.hidden-title {
+  display: none;
 }
 
 .wrapper {
@@ -799,7 +807,7 @@ h2, h3, h4, p {
 }
 .publications {
   background: #F5F5FA;
-  padding-top: 30px;
+  padding: 30px 0;
 }
 
 .publication-box {
@@ -931,7 +939,6 @@ h2, h3, h4, p {
   column-gap: 30px;
   overflow-x: auto;
   padding-left: 30px;
-  margin-bottom: 64px;
 }
 
 .nav-block::-webkit-scrollbar {
@@ -940,17 +947,6 @@ h2, h3, h4, p {
 
 .nav-block a:hover {
   color: #F0145A;
-}
-
-.nav-title::before {
-  content: "";
-  background: rgba(255, 255, 255, 0.3);
-  height: 4px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  margin-top: -30px;
 }
 
 .nav-content {
@@ -980,6 +976,9 @@ h2, h3, h4, p {
   color: #FFFFFF;
   margin-bottom: 30px;
   position: relative;
+  border-top: 4px solid rgba(255, 255, 255, 0.3);
+  padding-top: 60px;
+  margin-top: 60px;
 }
 
 .nav-text {
@@ -997,7 +996,6 @@ h2, h3, h4, p {
     column-gap: 30px;
     overflow-x: auto;
     padding-left: 60px;
-    margin-bottom: 124px;
   }
   .nav-content {
     padding: 0 60px;
@@ -1014,6 +1012,11 @@ h2, h3, h4, p {
     flex-wrap: nowrap;
     flex-direction: row;
     padding: 0 60px;
+  }
+  .nav-title {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 0;
   }
   .nav-block {
     display: flex;
@@ -1204,20 +1207,10 @@ textarea {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding-top: 62px;
+  padding-top: 30px;
   padding-bottom: 30px;
   position: relative;
-}
-
-.footer-blocks::before {
-  content: "";
-  background: #E6E6F0;
-  height: 2px;
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  margin-top: 32px;
+  border-top: 4px solid rgb(230, 230, 240);
 }
 
 .footer-block {
@@ -1555,26 +1548,6 @@ textarea {
   align-items: center;
 }
 
-.menu ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  position: relative;
-  z-index: 2;
-}
-
-.menu ul li {
-  margin: 0;
-  display: inline-block;
-}
-
-.menu ul ul {
-  display: block;
-  position: relative;
-  top: 100%;
-  right: 0;
-}
-
 .dropdown-link {
   display: block;
   padding: 7px 0px;
@@ -1588,15 +1561,6 @@ textarea {
   text-decoration: none;
 }
 
-.menu ul ul li {
-  width: 100%;
-  text-align: center;
-  display: list-item;
-  position: relative;
-  border: none;
-  border-radius: 15px;
-}
-
 .dropdown-active-link {
   color: #F0145A;
 }
@@ -1605,16 +1569,8 @@ textarea {
   background: #E6E6F0;
 }
 
-.menu ul li:hover > ul {
-  display: block;
-}
-
 .menu-wrapper li:not(:last-child) {
   margin-bottom: 15px;
-}
-
-.menu .menu-wrapper:hover > ul {
-  display: block;
 }
 
 .close-button {
@@ -1636,16 +1592,28 @@ textarea {
 }
 
 .menu-wrapper {
-  right: 0;
   display: none;
   width: 375px;
   padding: 64px 12px 12px;
   background-color: #fff;
   box-shadow: 0px 15px 30px 5px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
-  z-index: 2;
-  position: absolute;
-  margin-top: 167px;
+  z-index: 101;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+.menu:hover + .menu-wrapper {
+  display: block;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
 }
 
 /*# sourceMappingURL=style.css.map */
