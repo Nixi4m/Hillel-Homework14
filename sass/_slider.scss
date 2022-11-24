@@ -116,10 +116,6 @@
 }
 
 @media (min-width: 1440px) {
-
-    .slider-box {
-        flex-wrap: nowrap;
-    }
     
     .slider-img {
         width: 30.3%;
@@ -132,16 +128,9 @@
 }
 
 @media (min-width: 1920px) {
-    .slider-box {
-        flex-wrap: nowrap;
-    }
     
     .slider-img {
         width: 20%;
         height: 298px;
-    }
-
-    .slider-content {
-        width: 80%;
     }
 }
