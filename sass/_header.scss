@@ -95,6 +95,11 @@
     padding: 15px;
 }
 
+.breadcrumps-desctop {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
 .breadcrumps a:not(:last-child) {
     padding-right: 24px;
 }
@@ -115,9 +120,36 @@
     margin-right: 6px;
 }
 
-.breadcrumps-link {
+.breadcrumps-desctop a {
+    position: relative;
+}
+
+.breadcrumps-desctop a:not(:last-child) {
+    padding-right: 29px;
+}
+
+.breadcrumps-desctop a:not(:last-child)::after {
+    content: "";
+    background-image: url("../image/slash.svg");
+    background-size: cover;
+    width: 21px;
+    height: 47px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 4px;
+}
+
+.breadcrumps-mobile-link {
     font-size: 20px;
     line-height: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.breadcrumps-desctop-link {
+    font-size: 36px;
+    line-height: 44px;
     color: #FFFFFF;
     text-decoration: none;
 }
@@ -138,6 +170,10 @@
 
 .top-block-desc {
     display: none;
+}
+
+.services-title {
+    margin: 30px 0 ;
 }
 @media (min-width: 768px) {
     .top-block-desc {
@@ -196,7 +232,13 @@
     }
 
     .header-nav-link:not(:last-child) {
-        padding-right: 15px;
+        margin-right: 15px;
+    }
+
+    .header-nav-link-active {
+        color: #F0145A;
+        border-bottom: 2px  solid #F0145A;;
+        padding-bottom: 3px;
     }
 
     .lb-link {
@@ -215,9 +257,15 @@
         margin-right: -12px;
         border-radius: 50%;
     }
+    .services-title {
+        margin: 60px 0 ;
+    }
 }
 
 @media (min-width:1024px) {
+    .breadcrumps-desctop {
+        position: absolute;
+    }
     .main-logo {
         position: absolute;
     }

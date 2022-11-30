@@ -450,7 +450,7 @@ h2, h3, h4, p {
   margin-top: 3px;
 }
 
-.section-title {
+.main-title {
   font-weight: 700;
   font-size: 38px;
   line-height: 46px;
@@ -458,8 +458,19 @@ h2, h3, h4, p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.cards-title {
   margin-top: 10px;
   margin-bottom: 30px;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.card-link:hover > .card-title {
+  color: #F0145A;
 }
 
 .blocks-title-block {
@@ -553,7 +564,7 @@ h2, h3, h4, p {
   .wrapper {
     padding: 0 60px;
   }
-  .section-title {
+  .cards-title {
     margin-bottom: 60px;
   }
   .cards {
@@ -573,9 +584,6 @@ h2, h3, h4, p {
   }
 }
 @media (min-width: 1024px) {
-  .section-title {
-    margin-bottom: 60px;
-  }
   .card {
     width: calc(33.33% - 40px);
   }
@@ -590,9 +598,6 @@ h2, h3, h4, p {
   }
 }
 @media (min-width: 1440px) {
-  .section-title {
-    margin-bottom: 60px;
-  }
   .card:nth-child(n+3) {
     margin-bottom: 0px;
   }
@@ -603,9 +608,6 @@ h2, h3, h4, p {
 @media (min-width: 1920px) {
   .wrapper {
     padding: 0 160px;
-  }
-  .section-title {
-    margin-bottom: 60px;
   }
   .card:nth-child(n+3) {
     margin-bottom: 0px;
@@ -1147,6 +1149,9 @@ textarea {
   flex-wrap: wrap;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.footer-border-line {
   border-top: 4px solid rgb(230, 230, 240);
 }
 
@@ -1354,6 +1359,11 @@ textarea {
   padding: 15px;
 }
 
+.breadcrumps-desctop {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 .breadcrumps a:not(:last-child) {
   padding-right: 24px;
 }
@@ -1374,9 +1384,36 @@ textarea {
   margin-right: 6px;
 }
 
-.breadcrumps-link {
+.breadcrumps-desctop a {
+  position: relative;
+}
+
+.breadcrumps-desctop a:not(:last-child) {
+  padding-right: 29px;
+}
+
+.breadcrumps-desctop a:not(:last-child)::after {
+  content: "";
+  background-image: url("../image/slash.svg");
+  background-size: cover;
+  width: 21px;
+  height: 47px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 4px;
+}
+
+.breadcrumps-mobile-link {
   font-size: 20px;
   line-height: 24px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.breadcrumps-desctop-link {
+  font-size: 36px;
+  line-height: 44px;
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -1397,6 +1434,10 @@ textarea {
 
 .top-block-desc {
   display: none;
+}
+
+.services-title {
+  margin: 30px 0;
 }
 
 @media (min-width: 768px) {
@@ -1447,7 +1488,12 @@ textarea {
     text-decoration: none;
   }
   .header-nav-link:not(:last-child) {
-    padding-right: 15px;
+    margin-right: 15px;
+  }
+  .header-nav-link-active {
+    color: #F0145A;
+    border-bottom: 2px solid #F0145A;
+    padding-bottom: 3px;
   }
   .lb-link {
     position: relative;
@@ -1464,8 +1510,14 @@ textarea {
     margin-right: -12px;
     border-radius: 50%;
   }
+  .services-title {
+    margin: 60px 0;
+  }
 }
 @media (min-width: 1024px) {
+  .breadcrumps-desctop {
+    position: absolute;
+  }
   .main-logo {
     position: absolute;
   }

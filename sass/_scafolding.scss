@@ -138,7 +138,7 @@ h2, h3, h4, p {
     margin-top: 3px;
 }
 
-.section-title {
+.main-title {
     font-weight: 700;
     font-size: 38px;
     line-height: 46px;
@@ -146,8 +146,19 @@ h2, h3, h4, p {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+.cards-title {
     margin-top: 10px;
     margin-bottom: 30px;
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+.card-link:hover > .card-title {
+    color: #F0145A;
 }
 
 .blocks-title-block {
@@ -243,7 +254,7 @@ h2, h3, h4, p {
         padding: 0 60px;
     }
 
-    .section-title {
+    .cards-title {
         margin-bottom: 60px;
     }
 
@@ -269,10 +280,6 @@ h2, h3, h4, p {
 
 @media (min-width:1024px) {
 
-    .section-title {
-        margin-bottom: 60px;
-    }
-
     .card {
         width: calc(33.33% - 40px);
     }
@@ -292,9 +299,6 @@ h2, h3, h4, p {
 
 @media (min-width:1440px) {
 
-    .section-title {
-        margin-bottom: 60px;
-    }
 
     .card:nth-child(n+3) {
         margin-bottom: 0px;
@@ -308,10 +312,6 @@ h2, h3, h4, p {
 @media (min-width:1920px) {
     .wrapper {
         padding: 0 160px;
-    }
-
-    .section-title {
-        margin-bottom: 60px;
     }
 
     .card:nth-child(n+3) {
