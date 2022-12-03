@@ -767,6 +767,11 @@ h2, h3, h4, p, ul {
   gap: 30px;
 }
 
+.publication-section-title {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
 .publication-box a {
   text-decoration: none;
 }
