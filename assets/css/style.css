@@ -320,7 +320,7 @@ body {
   position: relative;
 }
 
-h2, h3, h4, p, ul {
+h2, h3, h4, p, ul, ol {
   margin: 0;
 }
 
@@ -1824,6 +1824,7 @@ ul {
 .publication-article {
   display: flex;
   flex-direction: column;
+  margin-bottom: 60px;
 }
 
 .public-article-head {
@@ -1846,9 +1847,16 @@ ul {
 
 .public-article-title {
   font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 30px;
+  line-height: 37px;
   color: #323264;
+}
+
+.public-article-sub-title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #46466E;
 }
 
 .public-article-text {
@@ -1866,12 +1874,91 @@ ul {
   width: 100%;
   min-height: 300px;
   max-height: 500px;
+  border-radius: 12px;
 }
 
 .article-content-block {
   display: flex;
   row-gap: 15px;
   flex-direction: column;
+}
+
+.public-content-img-box {
+  align-items: center;
+}
+
+.public-content-img img {
+  object-fit: cover;
+  width: 100%;
+  max-width: 640px;
+  max-height: 398px;
+}
+
+.public-img-description {
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #B3B3BA;
+}
+
+.article-num-list-item {
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.public-article-links {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 10px;
+}
+
+.public-social-link {
+  background: #F5F5FA;
+  border-radius: 12px;
+  width: 42px;
+  height: 42px;
+  padding: 9px;
+}
+
+.publication-fb {
+  background-image: url("../image/publication-fb-logo.svg");
+  background-size: 24px 24px;
+  width: 24px;
+  height: 24px;
+}
+
+.publication-tg {
+  background-image: url(/assets/image/publication-tg-logo.svg);
+  background-size: 24px 24px;
+  width: 24px;
+  height: 24px;
+}
+
+.publication-in {
+  background-image: url(/assets/image/publication-in-logo.svg);
+  background-size: 24px 24px;
+  width: 24px;
+  height: 24px;
+}
+
+ol li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+ol li {
+  counter-increment: list;
+  list-style-type: none;
+  position: relative;
+}
+
+ol li:before {
+  color: #F0145A;
+  content: counter(list) ".";
+  left: -32px;
+  position: absolute;
+  text-align: right;
+  width: 26px;
 }
 
 @media (min-width: 768px) {
