@@ -1,0 +1,72 @@
+.top-l-block {
+    padding: 10px 15px;
+    background: #F5F5FA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h-light-contacts {
+    color: #B3B3BA;
+}
+
+.l-header {
+    position:static;
+    border-radius: 0px 0px 12px 12px;
+}
+
+.hlegal-l-logo {
+    background-image: url("../image/hlegal-l-logo.svg");
+    background-size: cover;
+    background-color: transparent;
+    width: 69px;
+    height: 32px;
+}
+
+.language-light {
+    color: #B3B3BA;
+}
+
+.breadcrumps-light {
+    color: #323264;
+}
+
+.nav-l-link {
+    color: #24A3FF;
+}
+
+.menu-l-btn {
+    background-image: url("../image/menu-l-btn.svg");
+    background-size: cover;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-self: center;
+}
+
+.facebook-light {
+    background-image: url(../image/facebook-logo-light.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+}
+
+@media (min-width: 768px) {
+    .hlegal-l-logo {
+        width: 130px;
+        height: 60px;
+    }
+
+    .l-header {
+        padding-bottom: 60px;
+    }
+
+    .top-l-block {
+        display: none;
+    }
+}

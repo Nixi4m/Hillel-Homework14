@@ -29,6 +29,34 @@
     height: 100%;
 }
 
+.publication-btn-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.publication-switch {
+    background: #E6E6F0;
+    border-radius: 12px;
+    padding: 2px;
+}
+
+.publ-switch-btn {
+    border: none;
+    background: none;
+    padding: 8px 30px 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #323264;
+}
+
+.publ-switch-btn-active {
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
 .publication-content {
     padding: 30px;
 }
@@ -54,7 +82,9 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #B3B3BA;
-    margin-bottom: 34px;
+}
+
+.publication-border-line {
     padding-bottom: 15px;
     margin-bottom: 15px;
     border-bottom: 4px solid #E6E6F0;

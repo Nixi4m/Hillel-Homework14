@@ -38,7 +38,7 @@
     border-radius: 8px;
   }
 
-.header-contacts {
+.h-dark-contacts {
     color: #FFFFFF;
 }
 
@@ -172,10 +172,12 @@
     display: none;
 }
 
-.services-title {
-    margin: 30px 0 ;
-}
+
 @media (min-width: 768px) {
+    .navigation {
+        margin-bottom: 5px;
+    }
+
     .top-block-desc {
         display: block;
     }
@@ -223,6 +225,10 @@
         padding-top: 50px;
     }
 
+    .header-nav-offset {
+        padding-bottom: 60px;
+    }
+
     .header-nav-link {
         font-weight: 700;
         font-size: 16px;
@@ -260,9 +266,6 @@
         transform: translateY(-50%);
         margin-right: -12px;
         border-radius: 50%;
-    }
-    .services-title {
-        margin: 60px 0 ;
     }
 }
 
