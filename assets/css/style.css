@@ -2014,8 +2014,7 @@ ol li:before {
 .team-photo img {
   object-fit: cover;
   width: 100%;
-  min-height: 300px;
-  max-height: 500px;
+  height: 300px;
   border-radius: 12px;
 }
 
@@ -2023,8 +2022,7 @@ ol li:before {
   .team-photo img {
     object-fit: cover;
     width: 100%;
-    min-height: 300px;
-    max-height: 500px;
+    height: 400px;
     border-radius: 12px;
   }
   .team-cards {
