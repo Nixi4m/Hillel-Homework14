@@ -1086,6 +1086,10 @@ h2, h3, h4, p, ul, ol {
   padding: 15px;
 }
 
+.modal-input:focus {
+  outline: 1px solid #24A3FF;
+}
+
 .modal-input::placeholder {
   font-size: 16px;
   line-height: 26px;
@@ -1099,6 +1103,10 @@ h2, h3, h4, p, ul, ol {
   height: 130px;
   width: 100%;
   padding: 15px;
+}
+
+.message-input:focus {
+  outline: 1px solid #24A3FF;
 }
 
 .message-input::placeholder {
@@ -1175,7 +1183,6 @@ textarea {
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 650px;
-    background: #F5F5FA;
     box-shadow: 0px 15px 80px rgba(40, 40, 86, 0.5);
     border-radius: 12px;
   }
@@ -1306,6 +1313,13 @@ textarea {
     transform: translateY(-50%);
     margin-right: 10px;
     border-radius: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .footer-position {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
   }
 }
 .header-top-section {
@@ -2036,6 +2050,91 @@ ol li:before {
 @media (min-width: 1024px) {
   .team-card {
     width: calc(33.33% - 40px);
+  }
+}
+.registration-menu {
+  background-color: #F5F5FA;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.contact-info-block {
+  gap: 30px;
+}
+
+.contact-link {
+  font-size: 21px;
+  line-height: 30px;
+  color: #323264;
+}
+
+.contact-mail-link {
+  font-size: 21px;
+  line-height: 30px;
+  color: #24A3FF;
+}
+
+.contact-logo-box {
+  display: flex;
+  align-items: flex-end;
+  column-gap: 10px;
+}
+
+.contact-logo-link {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24A3FF;
+}
+
+.contact-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.contact-logo-box:hover > a div {
+  background-image: url("../image/fb-red.svg");
+}
+
+.contact-logo-box:hover > a {
+  color: #F0145A;
+}
+
+.contact-block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-block a {
+  text-decoration: none;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  border-top: 4px solid #E6E6F0;
+  border-bottom: 4px solid #E6E6F0;
+  padding: 30px 0;
+  gap: 15px;
+}
+
+@media (min-width: 768px) {
+  .contact-blocks {
+    flex-direction: row;
+    gap: 60px;
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 1024px) {
+  .contact-block {
+    width: calc(50% - 30px);
   }
 }
 
