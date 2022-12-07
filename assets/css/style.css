@@ -1873,7 +1873,7 @@ ul {
   color: #46466E;
 }
 
-.public-article-text {
+.article-text {
   font-size: 16px;
   line-height: 26px;
   color: #000000;
@@ -1981,6 +1981,10 @@ ol li:before {
     line-height: 37px;
   }
 }
+.team {
+  margin-top: 30px;
+}
+
 .team-cards {
   display: flex;
   flex-wrap: wrap;
@@ -2033,6 +2037,9 @@ ol li:before {
 }
 
 @media (min-width: 768px) {
+  .team {
+    margin-top: 0;
+  }
   .team-photo img {
     object-fit: cover;
     width: 100%;
@@ -2052,6 +2059,21 @@ ol li:before {
     width: calc(33.33% - 40px);
   }
 }
+.team-card-blocks {
+  display: flex;
+}
+
+.team-card-block {
+  display: flex;
+}
+
+.team-card-contacts {
+  font-size: 16px;
+  line-height: 20px;
+  color: #24A3FF;
+  text-decoration: none;
+}
+
 .registration-menu {
   background-color: #F5F5FA;
   padding: 30px;
