@@ -138,3 +138,11 @@
         width: 100%;
     }
 }
+
+@media (min-width: 1440px) {
+    .footer-position-alt {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}

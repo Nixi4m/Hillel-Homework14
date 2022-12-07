@@ -1,9 +1,14 @@
 .team-card-blocks {
     display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .team-card-block {
     display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .team-card-contacts {
@@ -11,4 +16,111 @@
     line-height: 20px;
     color: #24A3FF;
     text-decoration: none;
+}
+
+.team-card-sub-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #323264;
+    margin-bottom: 15px;
+}
+
+.team-card-contact-block {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.team-card-contact-info {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.team-card-about-block {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 4px solid #E6E6F0;;
+}
+
+.team-card-photo img {
+    object-fit: cover;
+    height: 375px;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.team-card-photo-block {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .team-card-blocks {
+        margin-top: 0px;
+        margin-bottom: 60px;
+    }
+
+    .team-card-block {
+        flex-direction: row ;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .team-card-blocks {
+        flex-direction: row;
+        gap: 60px;
+    }
+
+    .team-card-photo {
+        display: none;
+    }
+
+    .team-card-photo-block {
+        display: block;
+    }
+
+    .team-card-photo-block img {
+        object-fit: cover;
+        height: 375px;
+        width: 300px;
+        border-radius: 12px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .team-card-photo-block img {
+        height: 500px;
+        width: 400px;
+    }
+
+    .team-card-contact-info {
+        flex-direction: row;
+        gap: 0px;
+    }
+
+    .team-card-contacts {
+        position: relative;
+        padding-left: 26px;
+    }
+
+    .team-card-contacts:before {
+        content: "";
+        background-color: #B3B3BA;
+        width: 6px;
+        height: 6px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        margin-left: 10px;
+        border-radius: 50%;
+    }
 }
