@@ -136,6 +136,22 @@
     transform: translateY(-50%);
 }
 
+.achievment-1 {
+    width: 53.35px;
+}
+
+.achievment-2 {
+    width: 106px;
+}
+
+.achievment-3 {
+    width: 130px;
+}
+
+.achievment-4 {
+    width: 110.69px;
+}
+
 @media (min-width: 768px) {
     .about-us-team-photo {
         margin: 60px 0;
@@ -187,6 +203,22 @@
     
     .about-us-bot-title {
         width: 42.9%;
+    }
+
+    .achievment-1 {
+        width: auto;
+    }
+    
+    .achievment-2 {
+        width: auto;
+    }
+    
+    .achievment-3 {
+        width: auto;
+    }
+    
+    .achievment-4 {
+        width: auto;
     }
 
     .team-photo-cover-text {
