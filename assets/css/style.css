@@ -1478,6 +1478,7 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
 
 .language-active {
@@ -1724,6 +1725,7 @@ textarea {
 .menu {
   display: flex;
   align-items: center;
+  padding-right: 15px;
 }
 
 .dropdown-link {
@@ -1783,6 +1785,20 @@ textarea {
 }
 
 .menu:hover + .menu-wrapper {
+  display: block;
+}
+
+.menu-btn:hover {
+  background: #E6E6F0;
+  border-radius: 8px;
+}
+
+.menu-l-btn:hover {
+  background-color: #E6E6F0;
+  border-radius: 8px;
+}
+
+.menu-wrapper:hover {
   display: block;
 }
 
