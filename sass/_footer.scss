@@ -65,6 +65,14 @@
     text-decoration: none;
 }
 
+.footer-title-link:hover {
+    color: #F0145A;
+}
+
+.f-link:hover > .social-logo {
+    background-image: url("../image/fb-red.svg");
+}
+
 .footer-contacts {
     color: #46466E;
 }
@@ -157,7 +165,7 @@
 
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1920px) {
     .footer-position-alt {
         position: fixed;
         bottom: 0;
