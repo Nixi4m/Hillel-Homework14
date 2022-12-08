@@ -485,7 +485,7 @@ h2, h3, h4, p, ul, ol {
   margin-bottom: 30px;
 }
 
-.blocks-title {
+.minor-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
@@ -564,6 +564,9 @@ h2, h3, h4, p, ul, ol {
 }
 
 @media (min-width: 768px) {
+  .slider-btn:nth-child(n+4) {
+    display: none;
+  }
   .header {
     padding-bottom: 60px;
   }
@@ -2291,6 +2294,9 @@ ol li:before {
 }
 
 .about-advantage-block {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   padding-left: 30px;
   border-left: 4px solid #E6E6F0;
 }
@@ -2304,43 +2310,42 @@ ol li:before {
   background-clip: text;
   padding-left: 40px;
   position: relative;
+  margin-bottom: 10px;
 }
 
 .advantage-one:before {
   content: url("../image/advantage-1.svg");
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   position: absolute;
-  top: 50%;
   left: 0;
+  top: 50%;
   transform: translateY(-50%);
-  margin-right: 8px;
 }
 
 .advantage-two:before {
   content: url("../image/advantage-2.svg");
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   position: absolute;
-  top: 50%;
   left: 0;
+  top: 50%;
   transform: translateY(-50%);
-  margin-right: 8px;
 }
 
 .advantage-three:before {
   content: url("../image/advantage-3.svg");
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   position: absolute;
-  top: 50%;
   left: 0;
+  top: 50%;
   transform: translateY(-50%);
-  margin-right: 8px;
 }
 
 .about-us-team-photo {
   margin: 30px 0;
+  position: relative;
 }
 
 .about-us-team-photo img {
@@ -2348,9 +2353,139 @@ ol li:before {
   width: 100%;
 }
 
+.about-slider-wrapper {
+  padding: 0 60px;
+}
+
+.about-us-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-us-slider {
+  padding: 30px 0;
+}
+
+.about-us-slider-section {
+  background: #F5F5FA;
+}
+
+.about-slider-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 12px;
+}
+
+.about-achievment-block {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.about-slider-block:not(:first-child) {
+  display: none;
+}
+
+.team-photo-cover-text {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: 13px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  opacity: 0.8;
+  text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 @media (min-width: 768px) {
   .about-us-team-photo {
     margin: 60px 0;
+  }
+  .about-achievment-block {
+    gap: 40px;
+  }
+  .about-slider-block {
+    width: calc(25% - 30px);
+  }
+  .about-slider-block:not(:first-child) {
+    display: flex;
+  }
+  .about-slider-block img {
+    object-fit: cover;
+  }
+  .team-photo-cover-text {
+    font-size: 46px;
+    line-height: 56px;
+    letter-spacing: 63px;
+  }
+}
+@media (min-width: 1024px) {
+  .about-us-block {
+    flex-direction: row;
+  }
+  .about-us-block:last-child {
+    gap: 60px;
+  }
+  .about-us-top-block {
+    width: 55.6%;
+  }
+  .about-advantage-block {
+    width: 44.4%;
+  }
+  .about-us-bot-block {
+    width: 57.1%;
+  }
+  .about-us-bot-title {
+    width: 42.9%;
+  }
+  .team-photo-cover-text {
+    font-size: 86px;
+    line-height: 105px;
+    letter-spacing: 63px;
+  }
+}
+@media (min-width: 1440px) {
+  .about-us-top-block {
+    width: 63.04%;
+  }
+  .about-advantage-block {
+    width: 36.96%;
+  }
+  .about-us-bot-block {
+    width: 64.5%;
+  }
+  .about-us-bot-title {
+    width: 35.5%;
+  }
+  .team-photo-cover-text {
+    font-size: 96px;
+    line-height: 117px;
+    letter-spacing: 63px;
+  }
+}
+@media (min-width: 1920px) {
+  .about-us-top-block {
+    width: 70.83%;
+  }
+  .about-advantage-block {
+    width: 29.17%;
+  }
+  .about-us-bot-block {
+    width: 72.16%;
+  }
+  .about-us-bot-title {
+    width: 27.84%;
   }
 }
 

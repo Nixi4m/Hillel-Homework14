@@ -173,7 +173,7 @@ h2, h3, h4, p, ul, ol {
     margin-bottom: 30px;
 }
 
-.blocks-title {
+.minor-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
@@ -252,6 +252,10 @@ h2, h3, h4, p, ul, ol {
 }
 
 @media (min-width:768px) {
+    .slider-btn:nth-child(n+4) {
+        display: none;
+    }
+
     .header {
         padding-bottom: 60px;
     }
