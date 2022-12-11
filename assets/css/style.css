@@ -1778,14 +1778,15 @@ textarea {
 
 .menu-wrapper {
   display: none;
-  width: 375px;
+  width: calc(100% - 16px);
   padding: 64px 12px 12px;
   background-color: #fff;
   box-shadow: 0px 15px 30px 5px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   z-index: 101;
   position: fixed;
-  right: 0;
+  right: 50%;
+  transform: translateX(50%);
   bottom: 0;
 }
 
@@ -1794,7 +1795,7 @@ textarea {
 }
 
 .menu-btn:hover {
-  background: #E6E6F0;
+  background-color: #E6E6F0;
   border-radius: 8px;
 }
 
@@ -2434,10 +2435,17 @@ ol li:before {
 .about-us-block {
   display: flex;
   flex-direction: column;
+}
+
+.about-us-top-block {
   gap: 30px;
 }
 
-.about-us-text-block {
+.about-us-bot-block {
+  gap: 30px;
+}
+
+.about-us-text-box {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -2448,7 +2456,7 @@ ol li:before {
   line-height: 30px;
 }
 
-.about-us-top-block {
+.about-us-top-text-block {
   display: flex;
   flex-direction: column;
   gap: 28px;
@@ -2585,6 +2593,16 @@ ol li:before {
   width: 110.69px;
 }
 
+.about-us-bot-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 @media (min-width: 768px) {
   .about-us-team-photo {
     margin: 60px 0;
@@ -2606,21 +2624,25 @@ ol li:before {
     line-height: 56px;
     letter-spacing: 63px;
   }
+  .about-us-bot-title {
+    font-size: 38px;
+    line-height: 46px;
+  }
 }
 @media (min-width: 1024px) {
   .about-us-block {
     flex-direction: row;
   }
-  .about-us-block:last-child {
+  .about-us-bot-block {
     gap: 60px;
   }
-  .about-us-top-block {
+  .about-us-top-text-block {
     width: 55.6%;
   }
   .about-advantage-block {
     width: 44.4%;
   }
-  .about-us-bot-block {
+  .about-us-bot-text-block {
     width: 57.1%;
   }
   .about-us-bot-title {
@@ -2645,13 +2667,13 @@ ol li:before {
   }
 }
 @media (min-width: 1440px) {
-  .about-us-top-block {
+  .about-us-top-text-block {
     width: 63.04%;
   }
   .about-advantage-block {
     width: 36.96%;
   }
-  .about-us-bot-block {
+  .about-us-bot-text-block {
     width: 64.5%;
   }
   .about-us-bot-title {
@@ -2664,13 +2686,13 @@ ol li:before {
   }
 }
 @media (min-width: 1920px) {
-  .about-us-top-block {
+  .about-us-top-text-block {
     width: 70.83%;
   }
   .about-advantage-block {
     width: 29.17%;
   }
-  .about-us-bot-block {
+  .about-us-bot-text-block {
     width: 72.16%;
   }
   .about-us-bot-title {
