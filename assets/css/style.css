@@ -2005,6 +2005,7 @@ ul {
 .publication-article {
   display: flex;
   flex-direction: column;
+  margin-top: 30px;
   margin-bottom: 60px;
 }
 
@@ -2147,6 +2148,9 @@ ol li:before {
 }
 
 @media (min-width: 768px) {
+  .publication-article {
+    margin-top: 0;
+  }
   .public-article-title {
     font-size: 30px;
     line-height: 37px;
@@ -2353,6 +2357,11 @@ ol li:before {
   border-radius: 12px;
 }
 
+.contact-section {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .contact-info-block {
   gap: 30px;
 }
@@ -2388,8 +2397,6 @@ ol li:before {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 .contact-logo-box:hover > a div {
@@ -2420,15 +2427,20 @@ ol li:before {
 }
 
 @media (min-width: 768px) {
-  .contact-blocks {
-    flex-direction: row;
-    gap: 60px;
+  .contact-section {
     margin-top: 0;
     margin-bottom: 60px;
   }
+  .contact-blocks {
+    gap: 60px;
+  }
 }
 @media (min-width: 1024px) {
+  .contact-blocks {
+    flex-direction: row;
+  }
   .contact-block {
+    gap: 30px;
     width: calc(50% - 30px);
   }
 }
@@ -2452,6 +2464,7 @@ ol li:before {
 }
 
 .about-us-text {
+  font-weight: 400;
   font-size: 19px;
   line-height: 30px;
 }
@@ -2468,6 +2481,7 @@ ol li:before {
   gap: 40px;
   padding-left: 30px;
   border-left: 4px solid #E6E6F0;
+  align-self: flex-start;
 }
 
 .advantage-title {
@@ -2593,7 +2607,7 @@ ol li:before {
   width: 110.69px;
 }
 
-.about-us-bot-title {
+.about-us-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 37px;
@@ -2624,7 +2638,7 @@ ol li:before {
     line-height: 56px;
     letter-spacing: 63px;
   }
-  .about-us-bot-title {
+  .about-us-title {
     font-size: 38px;
     line-height: 46px;
   }
@@ -2645,7 +2659,7 @@ ol li:before {
   .about-us-bot-text-block {
     width: 57.1%;
   }
-  .about-us-bot-title {
+  .about-us-bot-title-block {
     width: 42.9%;
   }
   .achievment-1 {
@@ -2676,7 +2690,7 @@ ol li:before {
   .about-us-bot-text-block {
     width: 64.5%;
   }
-  .about-us-bot-title {
+  .about-us-bot-title-block {
     width: 35.5%;
   }
   .team-photo-cover-text {
@@ -2695,7 +2709,7 @@ ol li:before {
   .about-us-bot-text-block {
     width: 72.16%;
   }
-  .about-us-bot-title {
+  .about-us-bot-title-block {
     width: 27.84%;
   }
 }

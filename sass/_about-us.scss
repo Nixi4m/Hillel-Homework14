@@ -18,6 +18,7 @@
 }
 
 .about-us-text {
+    font-weight: 400;
     font-size: 19px;
     line-height: 30px;
 }
@@ -34,7 +35,7 @@
     gap: 40px;
     padding-left: 30px;
     border-left: 4px solid #E6E6F0;
-
+    align-self: flex-start;
 }
 
 .advantage-title {
@@ -159,7 +160,7 @@
     width: 110.69px;
 }
 
-.about-us-bot-title {
+.about-us-title {
     font-weight: 700;
     font-size: 30px;
     line-height: 37px;
@@ -196,7 +197,7 @@
         letter-spacing: 63px;
     }
 
-    .about-us-bot-title {
+    .about-us-title {
         font-size: 38px;
         line-height: 46px;
     }
@@ -223,7 +224,7 @@
         width: 57.1%;
     }
     
-    .about-us-bot-title {
+    .about-us-bot-title-block {
         width: 42.9%;
     }
 
@@ -263,7 +264,7 @@
         width: 64.5%;
     }
     
-    .about-us-bot-title {
+    .about-us-bot-title-block {
         width: 35.5%;
     }
 
@@ -287,7 +288,7 @@
         width: 72.16%;
     }
     
-    .about-us-bot-title {
+    .about-us-bot-title-block {
         width: 27.84%;
     }
 }

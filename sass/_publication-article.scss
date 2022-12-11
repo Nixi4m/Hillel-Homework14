@@ -1,6 +1,7 @@
 .publication-article {
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
     margin-bottom: 60px;
 }
 
@@ -145,6 +146,10 @@ ol li:before {
 
 
 @media (min-width: 768px) {
+    .publication-article {
+        margin-top: 0;
+    }
+    
     .public-article-title {
         font-size: 30px;
         line-height: 37px;
