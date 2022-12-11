@@ -2173,7 +2173,6 @@ ol li:before {
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 15px;
 }
 
 .team-card a {
@@ -2192,11 +2191,6 @@ ol li:before {
   background-size: 32px;
   width: 32px;
   height: 32px;
-}
-
-.team-card-btn-box {
-  display: flex;
-  align-items: center;
 }
 
 .team-card:hover > a div div h4 {
