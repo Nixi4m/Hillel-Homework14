@@ -32,7 +32,17 @@
 }
 
 .nav-l-link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
     color: #24A3FF;
+}
+
+.nav-l-link:hover {
+    padding-bottom: 3px;
+    border-bottom: 2px solid #24A3FF;
 }
 
 .menu-l-btn {
@@ -54,6 +64,10 @@
     background-repeat: no-repeat;
     width: 24px;
     height: 24px;
+}
+
+.facebook-light:hover {
+    background-image: url(../image/fb-red.svg);
 }
 
 @media (min-width: 768px) {
