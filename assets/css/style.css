@@ -2176,23 +2176,34 @@ ol li:before {
   gap: 15px;
 }
 
+.team-card a {
+  text-decoration: none;
+}
+
 .team-info {
   display: flex;
   justify-content: space-between;
+  margin-top: 15px;
 }
 
 .team-card-link {
   background-image: url("../image/more-btn.svg");
+  background-position: center;
   background-size: 32px;
   width: 32px;
   height: 32px;
 }
 
-.team-card:hover > div div h4 {
+.team-card-btn-box {
+  display: flex;
+  align-items: center;
+}
+
+.team-card:hover > a div div h4 {
   color: #F0145A;
 }
 
-.team-card:hover > div a div {
+.team-card:hover > a div div.team-card-link {
   background-image: url("../image/more-btn-active.svg");
 }
 
@@ -2202,6 +2213,10 @@ ol li:before {
   line-height: 20px;
   color: #323264;
   margin-bottom: 5px;
+}
+
+.team-photo {
+  font-size: 0;
 }
 
 .team-photo img {
